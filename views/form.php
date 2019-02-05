@@ -1,5 +1,5 @@
 <h1>Směnárna 1.O</h1>
-<form class="" action="index.php" method="post">
+<form class="" action="index.php" method="get">
   <label for="many"></label>
   <input type="text" name="money" >
   <label for="">Měna</label>
