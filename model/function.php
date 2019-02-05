@@ -1,3 +1,6 @@
 <?php
-// TODO: 
+  function ratesFromCNB ($fileCurrencyCNB){
+    // TODO:
+    return $currencyArr;
+  }
  ?>
