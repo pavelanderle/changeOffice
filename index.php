@@ -16,8 +16,11 @@
 
        // TODO: shift calculation
 
-       /* Display ticket */
-       require_once("views/ticket.php");
+       if (isset($_GET["money"])) {
+         /* Display ticket */
+         require_once("views/ticket.php");
+       }
+
      ?>
   </body>
 </html>
