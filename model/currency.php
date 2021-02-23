@@ -1,0 +1,22 @@
+<?php
+    $currencies["EUR"]["purchase"]=25.70;
+    $currencies["EUR"]["sold"]=26.20;
+    $currencies["USD"]["purchase"]=21.25;
+    $currencies["USD"]["sold"]=21.80;
+    $currencies["GBP"]["purchase"]=29.20;
+    $currencies["GBP"]["sold"]=29.80;
+    $currencies["CHF"]["purchase"]=23.60;
+    $currencies["CHF"]["sold"]=24.20;
+    $currencies["HRK"]["purchase"]=3.30;
+    $currencies["HRK"]["sold"]=3.70;
+    $currencies["CAD"]["purchase"]=16.50;
+    $currencies["CAD"]["sold"]=17.10;
+    $currencies["AUD"]["purchase"]=16.10;
+    $currencies["AUD"]["sold"]=16.70;
+    $currencies["DKK"]["purchase"]=3.40;
+    $currencies["DKK"]["sold"]=3.52;
+    $currencies["SEK"]["purchase"]=2.48;
+    $currencies["SEK"]["sold"]=2.60;
+    $currencies["NOK"]["purchase"]=2.45;
+    $currencies["NOK"]["sold"]=2.57;
+?>

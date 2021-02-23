@@ -14,9 +14,20 @@
        /* Display form */
        require_once("views/form.php");
 
-       // TODO: shift calculation
+       
 
        if (isset($_GET["money"])) {
+        require_once("model/currency.php");
+        $valut = $_GET["currency"];
+        if ($_GET["typeChange"]=="sale") {
+          $changeValue = $_GET["money"]*$currencies["$valut"]["sold"];
+          $chargeValue = $changeValue*0.01;
+        }
+        else {
+          $changeValue= $_GET["money"]/$currencies["$valut"]["purchase"];
+          $chargeValue=$_GET["money"]*0.01;
+        }
+
          /* Display ticket */
          require_once("views/ticket.php");
        }
