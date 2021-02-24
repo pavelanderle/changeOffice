@@ -4,13 +4,13 @@
 <p>Zvolená valuta:<?php echo htmlspecialchars($_GET["currency"])?></p>
 <p>Druh převodu:<?php echo htmlspecialchars($_GET["typeChange"]=="sale"?"Prodej":"Nákup")?></p>
 <p>Směnárenský poplatek:<?php echo htmlspecialchars($_GET["charge"]=="charge"?"Ano":"Ne")?></p>
-<p>Směnárenský poplatek - částka:<?php echo $chargeValue?> Kč</p>
+<p>Směnárenský poplatek - částka:<?php echo htmlspecialchars($_GET["charge"]=="charge"?$chargeValue:0 )?> Kč</p>
 <?php
     if ($_GET["typeChange"]=="purchase") {
         echo "Za vaše valuty jste získal celkem $changeValue Kč";
     }
     else {
-        echo "Za tuto částku v korunách jste od nás získal celkem $changeValue ve vámi vybrané valutě";
+        echo "Za požadované valuty jste zaplatil $changeValue Kč";
     }
 ?>
 

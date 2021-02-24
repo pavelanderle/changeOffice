@@ -11,16 +11,17 @@
   <p>
     <label for="Currency">Vyber měnu:</label>
     <select class="" name="currency">
-      <option value="KC">Česká koruna</option>
       <option value="EUR">Euro</option>
       <option value="USD">US dolar</option>
+      <option value="GBP">Libra</option>
+      <option value="CHF">Švýcarský frank</option>
     </select>
   </p>
   
   <p>
-    <label for="typeChange">Nákup</label>
+    <label for="typeChange">Nákup od zákazníka</label>
     <input type="radio" name="typeChange" value="purchase">
-    <label for="typeChange">Prodej</label>
+    <label for="typeChange">Prodej zákazníkovi</label>
     <input type="radio" name="typeChange" value="sale">
   </p>
   
