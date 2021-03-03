@@ -32,5 +32,7 @@
   <p>
     <input type="submit" name="submit" value="Převeď">
   </p>
+
+  <p><a href="index.php?actualCurrency=true">Aktualizovat kurzy</a></p>
   
 </form>

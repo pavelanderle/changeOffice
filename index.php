@@ -13,7 +13,9 @@
     <?php
        /* Display form */
        require_once("views/form.php");
-
+       if ($_GET["actualCurrency"]) {
+        ratesFromCNB("http://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt","model/currency.php");
+       }
        
 
        if (isset($_GET["money"])) {
